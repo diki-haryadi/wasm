@@ -1,7 +1,7 @@
 
 # Wasm Awesome
 
-Wasm examples and used for learning integration and serve wasm.
+WebAssembly (Wasm) is a powerful tool for running high-performance applications on the web. It allows you to run code written in go language.
 
 ## Screenshots
 
