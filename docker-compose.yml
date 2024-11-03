@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8585:8080"
+    volumes:
+      - ./public:/root/public:ro
+    command: ["serve"]
