@@ -1,4 +1,4 @@
-module github.com/diki-haryadi/flappy-ebiten
+module github.com/diki-haryadi/wasm
 
 go 1.23.0
 
