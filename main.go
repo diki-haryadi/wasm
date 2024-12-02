@@ -24,6 +24,10 @@ func serve() {
 		http.ServeFile(w, r, "./public/index.html")
 	})
 
+	http.HandleFunc("/tabler", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "./public/tabler.html")
+	})
+
 	http.HandleFunc("/embed", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./public/embed.html")
 	})

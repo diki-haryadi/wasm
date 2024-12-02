@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flappy Game</title>
+</head>
+<body>
+<script src="/static/wasm_exec.js"></script>
+<script>
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch("/static/tabler.wasm"), go.importObject).then(result => {
+        go.run(result.instance);
+    });
+</script>
+</body>
+</html>
